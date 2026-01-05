@@ -43,10 +43,14 @@ export default function HomePage() {
             fontWeight: 'bold',
             borderRadius: '6px'
           }}
-        >
-          Book via WhatsApp
-        </a>
-      </div>
-    </main>
-  )
-}
+        <p style={{ fontSize: '18px', marginBottom: '20px' }}>
+  Discreet, high-end companions available across the UK.
+</p>
+
+<a ...>
+  Book via WhatsApp
+</a>
+
+</div>
+          
+    
