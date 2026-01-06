@@ -63,7 +63,6 @@ export default function HomePage() {
     A curated selection of high-end companions and professional massage
     therapists available across the UK.
   </p>
-</div>
     </main>
   );
 }
