@@ -54,6 +54,16 @@ export default function HomePage() {
           Book via WhatsApp
         </a>
       </div>
+      <div style={{ marginTop: '80px', maxWidth: '900px' }}>
+  <h2 style={{ fontSize: '32px', marginBottom: '20px' }}>
+    Our Companions
+  </h2>
+
+  <p style={{ fontSize: '18px', opacity: 0.85 }}>
+    A curated selection of high-end companions and professional massage
+    therapists available across the UK.
+  </p>
+</div>
     </main>
   );
 }
