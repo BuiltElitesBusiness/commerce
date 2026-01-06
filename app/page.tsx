@@ -75,13 +75,34 @@ export default function HomePage() {
             style={{
               background: '#111',
               borderRadius: '14px',
-              overflow: 'hidden'
+              overflow: 'hidden',
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+    cursor: 'pointer'
             }}
-          >
+            onMouseEnter={(e) => {
+    e.currentTarget.style.transform = 'translateY(-8px)'
+    e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.6)'
+  }}
+     onMouseLeave={(e) => {
+    e.currentTarget.style.transform = 'translateY(0)'
+    e.currentTarget.style.boxShadow = 'none'
+  }}
+>         
             <img
               src="https://via.placeholder.com/400x520"
-              style={{ width: '100%', height: '360px', objectFit: 'cover' }}
-            />
+              style={{ 
+                 width: '100%',
+                 height: '360px',
+                objectFit: 'cover',
+               transition: 'transform 0.4s ease'
+              }}
+              onMouseEnter={(e) => {
+    e.currentTarget.style.transform = 'scale(1.05)'
+  }}
+  onMouseLeave={(e) => {
+    e.currentTarget.style.transform = 'scale(1)'
+  }}
+/>
             <div style={{ padding: '16px' }}>
               <h3>Angelina</h3>
               <p style={{ opacity: 0.7 }}>London</p>
